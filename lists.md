@@ -6,4 +6,5 @@
       $ cd src  
       $ python lists.py
    ```
-3.    
+3. There's comments in the code that explain what each snippet does.
+4. Next, read about [dictionaries](dictionaries.md).
