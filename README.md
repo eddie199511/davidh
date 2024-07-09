@@ -13,5 +13,10 @@ This is a quick tutorial on how to get going with PyCharm and Python.
 9. This will pull all the files from the github repository to your local machine.
 10. This assumes you have access to a `bash` or other similar Unix shell.
 11. Change directories into the `davidh` directory that was created.
-12. I've included a Python virtual environment for use with this project. You can activate it by running this command: `source venv/bin/activate`. Further reading on virtual environments can be found [here](https://docs.python.org/3/tutorial/venv.html)
+12. We'll be creating a *virtual environment* for use with this.   
+    1. Create a virtual environment by running this command: `python -m venv venv`  
+    2. Further reading on virtual environments can be found [here](https://docs.python.org/3/tutorial/venv.html)
+    3. On Windows, activate the virtual environment by running: `venv\Scripts\activate`
+    4. On Mac/Linux, activate it by running: `source env/bin/activate`
+    5. Next, install all dependencies by running `pip install -r requirements.txt`
 13. Have a look at the first code example: [lists](lists.md)

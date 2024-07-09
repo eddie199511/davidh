@@ -1,11 +1,14 @@
 from os import getenv
 import pymssql
 
+# This assumes you have these environment variables set to your SQL Server instance
 server = getenv("PYMSSQL_TEST_SERVER")
 user = getenv("PYMSSQL_TEST_USERNAME")
 password = getenv("PYMSSQL_TEST_PASSWORD")
 database = getenv("PYMSSQL_TEST_DATABASE")
 
+# This with construct is called a context manager. What this does is that your cursor
+# and connection are automatically closed when the code exits that block
 with pymssql.connect(server, user, password, database) as conn:
     with conn.cursor(as_dict=True) as cursor:
         sql = """
